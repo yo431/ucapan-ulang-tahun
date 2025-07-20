@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Selamat Ulang Tahun!</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <canvas id="confetti-canvas"></canvas>
+
+  <header class="hero">
+    <h1 class="bounce">🎉 Selamat Ulang Tahun! 🎂</h1>
+    <p class="sub-msg">Semoga hari-harimu dipenuhi kebahagiaan dan cinta ❤️<br> Tetap semangat dan terus bersinar!</p>
+    <div class="controls">
+      <button id="btnLagu" class="btn" onclick="toggleLagu()">Putar Lagu 🎵</button>
+      <button class="btn" onclick="tembakKonfeti()">Konfeti Lagi 🎊</button>
+    </div>
+    <audio id="lagu" preload="auto">
+      <source src="lagu.mp3" type="audio/mp3">
+      Browser Anda tidak mendukung audio.
+    </audio>
+  </header>
+
+  <section class="slides-wrapper">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="img/foto1.jpg" alt="Foto 1">
+          <div class="caption">
+            <h3>Ucapan 1</h3>
+            <p>Hari ini adalah hari istimewa... karena kamu lahir! 🎈</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/foto2.jpg" alt="Foto 2">
+          <div class="caption">
+            <h3>Ucapan 2</h3>
+            <p>Semoga semua impianmu menjadi nyata. Teruslah melangkah! 🌟</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/foto3.jpg" alt="Foto 3">
+            <div class="caption">
+              <h3>Ucapan 3</h3>
+              <p>Terima kasih sudah jadi yang terbaik untuk kami. Love u! 💖</p>
+            </div>
+        </div>
+        <!-- Tambah slide baru di sini -->
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+
+  <footer>
+    <p class="footer">Dibuat dengan ❤ khusus untukmu.</p>
+  </footer>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
